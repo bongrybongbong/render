@@ -4,6 +4,7 @@ pandas
 matplotlib
 pyvis
 networkx
+typing-extensions
 openai==0.28
 graphviz
 dataclasses
