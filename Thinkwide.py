@@ -23,7 +23,6 @@ from textwrap import dedent
 from streamlit_agraph import agraph, Node, Edge, Config
 from dotenv import load_dotenv
 from streamlit_modal import Modal
-from config import OPENAI_API_KEY
 
 CATEGORY_NAMES = {
     "maps": "날짜 픽스",
