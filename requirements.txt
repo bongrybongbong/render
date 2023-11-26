@@ -1,0 +1,15 @@
+numpy
+streamlit
+pandas
+matplotlib
+pyvis
+networkx
+openai
+openai==0.28
+graphviz
+dataclasses
+streamlit_agraph
+python-dotenv
+streamlit_pills
+streamlit_modal
+streamlit-markmap==1.0.1
