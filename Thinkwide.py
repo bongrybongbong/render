@@ -10,7 +10,8 @@ from data.first_data import name, meeting_data, data
 from datetime import datetime
 from PIL import Image
 import re
-from typing import Optional, Tuple, List, Union, Literal
+from typing import Optional, Tuple, List, Union
+from typing_extensions import Literal
 import base64
 import matplotlib.pyplot as plt
 from streamlit.delta_generator import DeltaGenerator
