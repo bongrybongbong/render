@@ -21,7 +21,6 @@ from dataclasses import dataclass, asdict
 from textwrap import dedent
 from streamlit_agraph import agraph, Node, Edge, Config
 from dotenv import load_dotenv
-from streamlit_pills import pills
 from streamlit_modal import Modal
 from config import OPENAI_API_KEY
 
@@ -400,14 +399,7 @@ st.set_page_config(page_title="markmap", layout="wide")
 
 
 st.header('🫧Thinkwide Project Mind Map')
-category = pills(
-    "Category",
-    list(CATEGORY_NAMES.keys()),
-    CATEGORY_ICONS,
-    index=None,
-    format_func=lambda x: CATEGORY_NAMES.get(x, x),
-    label_visibility="collapsed",
-)
+
 
 st.markdown("""---""")
 col1, col2= st.columns(2)
