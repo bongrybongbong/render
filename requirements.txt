@@ -11,4 +11,4 @@ dataclasses
 streamlit_agraph
 python-dotenv
 streamlit_modal
-streamlit-markmap==1.0.1
+streamlit-markmap
