@@ -380,10 +380,12 @@ def main():
         if valid_submission:
             if reset:
                 mindmap.ask_for_initial_graph(query=predefined_text)
+                mindmap.visualize(graph_type)
             else:
                 mindmap.ask_for_extended_graph(text=query)
-        else:
-            mindmap.visualize(graph_type)
+                mindmap.visualize(graph_type)
+        else: 
+            mindmap.visualize(graph_type)  
 
 # Streamlit 페이지에 제목과 날짜/시간을 추가
 
