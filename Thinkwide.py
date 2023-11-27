@@ -413,7 +413,7 @@ with col1:
 
 with col2:
     st.subheader('🫧Mind Map')
-    with open(r'C:\CODE\thinkwide_app-main\data\structured_markdown_data1.md', encoding='utf-8') as fp:
+    with open(r'data/structured_markdown_data1.md', encoding='utf-8') as fp:
         md = fp.read()
     markmap(md,height=250)
 
