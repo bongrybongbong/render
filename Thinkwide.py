@@ -377,17 +377,11 @@ def main():
         return
 #어떤 작업이 진행 중
     with st.spinner(text="Loading graph..."):
-        # if submit and non-empty query, then update graph
         if valid_submission:
             if reset:
-                # completely new mindmap
                 mindmap.ask_for_initial_graph(query=predefined_text)
             else:
-                # extend existing mindmap
                 mindmap.ask_for_extended_graph(text=query)
-            # since inputs also have to be updated, everything
-            # is rerun
-            st.rerun()
         else:
             mindmap.visualize(graph_type)
 
