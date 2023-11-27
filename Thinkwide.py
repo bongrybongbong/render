@@ -383,7 +383,11 @@ def main():
                 # completely new mindmap
                 mindmap.ask_for_initial_graph(query=predefined_text)
             else:
+                # extend existing mindmap
                 mindmap.ask_for_extended_graph(text=query)
+            # since inputs also have to be updated, everything
+            # is rerun
+            st.rerun()
         else:
             mindmap.visualize(graph_type)
 
